@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <title>Register</title>
+
+<style>
+   body, html {
+  height: 100%;
+}
+
+h1{
+    font-size: 3em;
+}
+
+.container{
+    opacity: 0.9;
+    width: 35%;
+}
+
+.bg { 
+ 
+  background-image: url("bg1.jpg");
+  opacity: 0.8;
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+</head>
+<body >
+    <div class="bg">
+
+<div class="container ">
+  <br>
+        <div class="notification">
+                        <center>
+                        <h1>ระบบลงทะเบียน</h1>
+                        <br>
+                        
+                  
+                        <div class="field">
+                                <div class="control">
+                                  <input class="input is-info is-medium" type="text" placeholder="ชื่อ" id="fnametxt">
+                                 
+                                </div>
+                              </div>
+
+                        <div class="field">
+                                    <div class="control">
+                                            <input class="input is-info is-medium" type="text" placeholder="นามสกุล" id="lnametxt">
+                                    </div>
+                                  </div>   
+
+                         <div class="field">
+                                    <div class="control">
+                                            <input class="input is-info is-medium" type="text" placeholder="รหัสนิสิต" id="idtxt">
+                                    </div>
+                                  </div>   
+
+                                     
+                        <div class="field" class="mail">
+                                        <div class="control">
+                                                <input class="input is-info is-medium" type="text" placeholder="E-mail" id="emailtxt" >
+                                        </div>
+                                      </div>        
+                                   
+                
+
+
+                                          <form class="pure-form">
+                                                <fieldset>
+                                                                       
+                        <div class="field">
+                                <div class="control">
+                                        <input class="input is-info is-medium" type="text" placeholder="Password" id="passwordtxt">
+                                </div>
+                              </div>    
+
+        <div class="field">
+                                    <div class="control">
+                                            <input class="input is-info is-medium" type="text" placeholder="Repeat-Password" id="repasswordtxt">
+                                    </div>
+                                  </div> 
+                                                </fieldset>
+                                            </form>
+                        
+
+                        <div>
+                            <br>
+                                <a class="button is-primary is-medium " name="register_btn"  onclick="saveData()" >บันทึก</a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <a class="button is-primary is-medium " onclick="goLogin()">Login</a>
+                          
+                        </div>
+                
+                  
+                        <br>
+                    </center>
+                  </div>
+                </div>
+               </div>
+
+               <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAzHoMDhcAnXUm0835EOV4V6rxcO7cKQN8",
+    authDomain: "ooad-11e61.firebaseapp.com",
+    databaseURL: "https://ooad-11e61.firebaseio.com",
+    projectId: "ooad-11e61",
+    storageBucket: "ooad-11e61.appspot.com",
+    messagingSenderId: "381231483253"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="register.js"></script>
+
+           
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <title>Login</title>
+
+<style>
+   body, html {
+  height: 100%;
+}
+
+h1{
+    font-size: 3em;
+}
+
+.container{
+    opacity: 0.9;
+    width: 30%;
+}
+
+.bg { 
+ 
+  background-image: url("bg1.jpg");
+  opacity: 0.8;
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+<script>
+        function goRegister() {
+          location.replace("register.html")
+        }
+</script>
+
+</head>
+<body>
+    <div class="bg">
+<br><br>
+<div class="container ">
+        <div class="notification" id="login_div">
+                        <center>
+                        <h1>Login</h1>
+                        <br>
+                        
+                        <div class="field">
+                                <div class="control">
+                                  <input class="input is-info is-medium" type="text" placeholder="Email" id="emailtxt">
+                                </div>
+                              </div>
+
+                        <div class="field">
+                                    <div class="control">
+                                      <input class="input is-info is-medium" type="text" placeholder="Password" id="passwordtxt">
+                                    </div>
+                                  </div>
+
+                                  &nbsp;&nbsp;&nbsp;
+                        <div>
+                                <a  class="button is-primary is-medium " onclick="signIn()">&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <a class="button is-primary is-medium ">ลืมรหัสผ่าน</a>
+                          
+                        </div>
+                        <br>
+                    </center>
+                  </div>
+                </div>
+                <br><br>
+                <center>
+                        <a class="button is-danger  is-large" onclick="goRegister()">ลงทะเบียน</a>
+                </center>
+
+
+
+
+                
+                <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAzHoMDhcAnXUm0835EOV4V6rxcO7cKQN8",
+    authDomain: "ooad-11e61.firebaseapp.com",
+    databaseURL: "https://ooad-11e61.firebaseio.com",
+    projectId: "ooad-11e61",
+    storageBucket: "ooad-11e61.appspot.com",
+    messagingSenderId: "381231483253"
+  };
+  firebase.initializeApp(config);
+</script>
+  
+</script>
+                <script src="login.js"></script>
+
+
+
+              
+                
+</div>
+</body>
+</html>
